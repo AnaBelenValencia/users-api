@@ -84,3 +84,11 @@ You can register a new user at `/api/auth/register`, then login at `/api/auth/lo
 - Avoided migrations for now to simplify development, but `synchronize: true` is enabled.
 - Used class-validator for future scalability in data validation.
 - Swagger was chosen for easy testing and documentation of endpoints.
+
+## Future Improvements
+
+- Implement database migrations.
+- Add unit and integration tests.
+- Add password update endpoint.
+- Add role-based access control (RBAC).
+- Add pagination and filtering to user listing.

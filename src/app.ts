@@ -8,6 +8,7 @@ import swaggerSpec from './docs/swagger'
 // Routes
 import authRoutes from './routes/auth.routes'
 import userRoutes from './routes/user.routes'
+import healthRoutes from './routes/health.routes'
 
 const app = express()
 
@@ -23,5 +24,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 // Routes API
 app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
+
+app.use('/api', healthRoutes)
 
 export default app

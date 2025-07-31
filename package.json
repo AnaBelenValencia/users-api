@@ -4,7 +4,8 @@
   "description": "REST API for user management with authentication",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon --watch src --exec \"tsx src/index.ts\""
+    "dev": "nodemon --watch src --exec \"tsx src/index.ts\"",
+    "test": "jest --passWithNoTests"
   },
   "author": "Ana Valencia",
   "license": "MIT",
@@ -28,12 +29,17 @@
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.19",
     "@types/express": "^4.17.21",
+    "@types/jest": "^30.0.0",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/morgan": "^1.9.10",
     "@types/node": "^20.11.30",
+    "@types/supertest": "^6.0.3",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.8",
+    "jest": "^30.0.5",
     "nodemon": "^3.1.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.0",
     "tsx": "^4.7.0",
     "typescript": "^5.4.5"
   }

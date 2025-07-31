@@ -3,8 +3,8 @@ import {
   getUserProfile,
   updateUserProfile,
   listUsers,
-} from '../controllers/user.controller.js'
-import { authenticateToken } from '../middlewares/auth.middleware.js'
+} from '../controllers/user.controller'
+import { authenticateToken } from '../middlewares/auth.middleware'
 
 const router = Router()
 
